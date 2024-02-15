@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CarryBoxes</title>
+    <script src="script.js"></script>
+  </head>
+  <body onload="init()">
+    <canvas id="soko" width="800" height="440"></canvas>
+    <table>
+      <tr>
+        <td></td>
+        <td><button onclick="mykeydown({ keyCode: 38})">U</button></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><button onclick="mykeydown({ keyCode: 37})">L</button></td>
+        <td></td>
+        <td><button onclick="mykeydown({ keyCode: 39})">R</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="mykeydown({ keyCode: 40})">D</button></td>
+        <td></td>
+      </tr>
+    </table>
+    <img id="imgWall" src="imgWall.png" style="display: none">
+    <img id="imgGoal" src="imgGoal.png" style="display: none">
+    <img id="imgWorker" src="imgWorker.png" style="display: none">
+    <img id="imgLuggage" src="imgLuggage.png" style="display: none">
+  </body>
+  
+</html>
