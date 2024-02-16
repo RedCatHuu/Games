@@ -20,6 +20,7 @@ const data = [
   
   function init(){
     gc = document.getElementById("soko").getContext("2d");
+    // キーボードが押されたら、mykeydownを実行
     window.onkeydown = mykeydown;
     repaint();
   }

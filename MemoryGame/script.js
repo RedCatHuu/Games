@@ -11,8 +11,11 @@ Array.prototype.shuffle = function(){
   return this;
 };
 
-let timer = NaN;
-let flipTimer = NaN;
+let timer = null;
+// 参考書では初期化に"NaN"を用いているが、非数を表すNaNよりも単に値がないことを示すnullのほうがいいのでは？
+// let timer = NaN;
+let flipTimer = null;
+// let flipTimer = NaN;
 let score = 0;
 let prevCard = null;
 let startTime = null;
