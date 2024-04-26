@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      function init(){
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        
+        ctx.strokeStyle = "#ff0000";
+        ctx.fillStyle = "#00ff00";
+        ctx.lineWidth = "10";
+        ctx.lineCap = "round"; // 先端丸め
+        ctx.shadowColor = "#000000"; // 影
+        ctx.shadowBlur = 20; // 影ぼやけ
+        
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(180, 250);
+        ctx.stroke();
+        
+        ctx.fillRect(300, 100, 100, 150); // 塗りつぶし四角
+        
+        ctx.strokeRect(500, 100, 100, 150); // 線の四角
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <canvas id="canvas" width="700" height="400" ></canvas>
+  </body>
+</html>
