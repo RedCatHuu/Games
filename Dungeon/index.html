@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dungeon</title>
+    <style>
+      #maze {
+        width: 900px;
+        height: 600px;
+        touch-action: none;
+      }
+      #START {
+        position: absolute;
+        left: 200px;
+        top: 200px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body onload="init()">
+    <!-- Thanks to http://takao-suenobu.com/ & http://dova-s.jp/ -->
+    <audio src="Emergency.mp3" id="bgm" loop="loop"></audio>
+    <canvas id="maze" width="900" height="600"></canvas>
+    <img id="START" src="img/start.png" onclick="go()"><br>
+    <img id="arrows" src="img/arrows.png" style="display: none">
+  
+    <img id="hero0" src="img/hero0.png" style="display: none">
+    <img id="hero1" src="img/hero1.png" style="display: none">
+    <img id="hero2" src="img/hero2.png" style="display: none">
+    <img id="hero3" src="img/hero3.png" style="display: none">
+    <img id="alien0" src="img/alien0.png" style="display: none">
+    <img id="alien1" src="img/alien1.png" style="display: none">
+    <img id="alien2" src="img/alien2.png" style="display: none">
+    <img id="alien3" src="img/alien3.png" style="display: none">
+  </body>
+</html>
